@@ -1,0 +1,51 @@
+---
+title: "MSDRCapstone Package"
+author: "Cheng-Chung Li"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{MSDRCapstone Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Installing necessary packages
+```{r}
+library(dplyr)
+library(readr)
+library(stringr)
+library(stringi)
+```
+
+## Accessing the package
+```{r}
+library(devtools)
+install_github("askia318/MSDRCapstone")
+library(MSDRCapstone)
+```
+
+## Introduction 
+The overall goal of the capstone project is to integrate the skills you have developed over the courses in this Specialization and to build a software package that can be used to work with the NOAA Significant Earthquakes dataset.
+
+## eq_clean_data
+This function takes raw NOAA data frame and returns a clean data frame. The clean data frame should have the following:
+A date column created by uniting the year, month, day and converting it to the Date class
+LATITUDE and LONGITUDE columns converted to numeric class
+
+An example: 
+```{r}
+eq_clean_data()
+```
+
+## eq_location_clean
+It cleans the LOCATION_NAME column by stripping out the country name (including the colon) and converts names to title case (as opposed to all caps).
+
+```{r}
+eq_location_clean()
+```
+
+## eq_map() 
+It takes an argument data containing the filtered data frame with earthquakes to visualize. 
+
+## eq_create_label() 
+It takes the dataset as an argument and creates an HTML label that can be used as the annotation text in the leaflet map.

@@ -1,0 +1,12 @@
+Package: MSDRCapstone
+Type: Package
+Title: Test What we know after MSDR Courses by Processing NOAA Significant Earthquakes dataset
+Author: Who wrote it
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: The overall goal of the capstone project is to integrate the skills you have developed over the courses in this Specialization and to build a software package that can be used to work with the NOAA Significant Earthquakes dataset.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
