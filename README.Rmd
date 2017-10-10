@@ -1,0 +1,24 @@
+---
+title: "MSDRCapstone"
+author: "Cheng-Chung Li"
+date: "2017/10/10"
+output: html_document
+---
+
+
+Test What we know after MSDR Courses by Processing NOAA Significant Earthquakes dataset
+
+## Installation
+
+You can install MSDRCapstone from github with:
+
+```R
+# install.packages("devtools")
+devtools::install_github("MSDRCapstone/askia318")
+```
+
+## Example
+* It takes raw NOAA data frame and returns a clean data frame.
+```R
+eq_clean_data
+```
